@@ -11,6 +11,6 @@ jobs:
         - name: Welcome Message
           run: echo "My First Github Actions Job"
         - name: List files
-          run: ls 
+          run: ls -a
         - name: Read file
           run: cat file.txt
