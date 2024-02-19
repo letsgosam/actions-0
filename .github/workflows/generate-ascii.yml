@@ -16,5 +16,5 @@ jobs:
           run: | 
             echo "Listing Repo Files and Reading a file"
             ls -ltra
-            cat file.txt
+            cat dragon.txt
         
