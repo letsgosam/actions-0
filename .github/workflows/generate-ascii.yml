@@ -8,13 +8,9 @@ jobs:
         steps:
         - name: Checkout Repo
           uses: actions/checkout@v4
-        - name: Install cowsay Program
-          run: sudo apt install cowsay -y 
-        - name: Generate ASCII Artworks
-          run: cowsay -f dragon "Run for cover, I am a DRAGON...RAWR" >> dragon.txt
-        - name: List Repo and Read File
-          run: | 
-            echo "Listing Repo Files and Reading a file"
-            ls -ltra
-            cat dragon.txt
+        - name: Using Shell Script
+          run: |
+            chmod +x ascii-script.sh
+            ./ascii-script.sh
+ 
         
